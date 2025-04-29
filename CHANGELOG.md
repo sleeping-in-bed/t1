@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/sleeping-in-bed/t1/compare/v1.0.0...v1.0.1) (2025-04-29)
+
+### Bug Fixes
+
+* add author ([8006548](https://github.com/sleeping-in-bed/t1/commit/80065485c22a9573bf7eb9762fc97bb827f6968b))
+
 ## 1.0.0 (2025-04-29)
 
 ### Features
