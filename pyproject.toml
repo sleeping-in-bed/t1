@@ -6,7 +6,7 @@ name = "t1"
 version = "1.0.0"
 dynamic = ["dependencies", "optional-dependencies"]
 authors = [
-    { name = "", email = "" },
+    { name = "sleeping-in-bed", email = "nyanyanyaworld@gmail.com" },
 ]
 description = ""
 readme = "README.md"
