@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=60.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "t1"
+version = "0.0.1"
+dynamic = ["dependencies", "optional-dependencies"]
+authors = [
+    { name = "", email = "" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+
+[tool.setuptools]
+packages = ["t1"]
+include-package-data = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ""
+testpaths = [
+    "tests"
+]
+
+[tool.ruff]
+extend-exclude = [
+    "t1/resources",
+    "tests/resources",
+    "tests/tmp",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+[tool.mypy]
+exclude = [
+    "t1/resources",
+    "tests/resources",
+    'tests/tmp',
+]
